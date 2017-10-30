@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class rotateImage {
+public class RotateImage {
 
     static int[][] rotateImage(int[][] a) {
 

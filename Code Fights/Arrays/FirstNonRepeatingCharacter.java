@@ -32,7 +32,7 @@
 
 import java.util.HashMap;
 
-class firstNonRepeatingCharacter {
+class FirstNonRepeatingCharacter {
 
     static char character(String s) {
 

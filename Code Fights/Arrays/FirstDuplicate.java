@@ -29,7 +29,7 @@
 
 import java.util.HashSet;
 
-public class firstDuplicate {
+public class FirstDuplicate {
 
     static int firstDuplicate(int[] arr) {
         int min = -1;

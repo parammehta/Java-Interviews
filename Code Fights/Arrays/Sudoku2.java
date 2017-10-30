@@ -51,7 +51,7 @@
 
 import java.util.Arrays;
 
-public class sudoku2 {
+public class Sudoku2 {
 
     static boolean sudoku2(char[][] grid) {
         for (int i = 0; i < 9; i++) {
