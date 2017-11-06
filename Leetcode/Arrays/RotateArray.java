@@ -13,26 +13,29 @@ import java.util.Arrays;
 
 public class RotateArray {
 
-    //O(1) space O(n*k) Complexity. Using bubble sort.
-    static void rotate(int[] nums, int k) {
-        if (nums == null || k < 0) {
-            throw new IllegalArgumentException("Illegal argument!");
-        }
-        for (int i = 0; i < k; i++) {
-            for (int j = nums.length - 1; j > 0; j--) {
-                int temp = nums[j];
-                nums[j] = nums[j - 1];
-                nums[j - 1] = temp;
-            }
-        }
-        //print array
-        System.out.println(Arrays.toString(nums));
-    }
-
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7};
         int steps = 3;
-        rotate(arr, steps);
+        RotateArray rotateArray = new RotateArray();
+        rotateArray.rotate(arr, steps);
 
+    }
+
+    public void rotate(int[] nums, int k) {
+        k %= nums.length;
+        reverse(nums, 0, nums.length - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, nums.length - 1);
+        System.out.println(Arrays.toString(nums));
+    }
+
+    public void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
     }
 }
