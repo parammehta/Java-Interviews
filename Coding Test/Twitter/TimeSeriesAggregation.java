@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class TimeSeriesAnalysis {
+public class TimeSeriesAggregation {
     private static MyDate startDate;
     private static MyDate endDate;
     private static List<Request> requstList = new ArrayList<>();
