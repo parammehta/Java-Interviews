@@ -1,5 +1,3 @@
-package Trees;
-
 public class MaximumDepthBinaryTree {
 
     // Definition for a binary tree node.

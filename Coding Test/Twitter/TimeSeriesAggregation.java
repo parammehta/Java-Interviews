@@ -24,7 +24,6 @@ public class TimeSeriesAggregation {
                     requstList.add(request);
                 }
             } else {
-                //no input
             }
         }
         sortRequestList();
@@ -296,17 +295,3 @@ class RequestComparator implements Comparator {
         return r1.getDate().compareTo(r2.getDate());
     }
 }
-
-/*
-2015-08,2016-04
-
-2015-08-15,clicks,635
-2016-03-24,app_installs,683
-2015-04-05,favorites,763
-2016-01-22,favorites,788
-2015-12-26,clicks,525
-2016-06-03,retweets,101
-2015-12-02,app_installs,982
-2016-09-17,app_installs,770
-2015-11-07,impressions,245
- */
