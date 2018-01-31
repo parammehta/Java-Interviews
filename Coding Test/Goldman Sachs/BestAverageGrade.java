@@ -10,8 +10,13 @@ public class BestAverageGrade {
 
         String input[][] =
                 {
+                        {"Sarah", "98"},
                         {"Sarah", "99"},
                         {"Sarah", "100"},
+                        {"Sarah", "101"},
+                        {"Sarah", "102"},
+                        {"Sarah", "103"},
+                        {"B", "-104"}
                 };
         Map<String, Double> averageMap = new HashMap<>();
         Map<String, Integer> frequencyMap = new HashMap<>();
@@ -39,12 +44,13 @@ public class BestAverageGrade {
         double largestObj = Double.MIN_VALUE;
         while (iterator.hasNext()) {
             Map.Entry pair = (Map.Entry) iterator.next();
+            System.out.println(pair.getValue());
             if (largestObj < (Double) pair.getValue()) {
                 largestObj = (Double) pair.getValue();
             }
             iterator.remove();
         }
-        Double largestAverage = largestObj;
+        int largestAverage = (int) largestObj;
         System.out.println(largestAverage);
     }
 
