@@ -1,5 +1,4 @@
-package Coursera;
-/*
+/*JenBotCanReach
     You are given a pair of integers (x,y). You may perform either of the two operations below,in any order, zero or more times.
 
     1. (x,y) -> (x+y,y)
@@ -32,11 +31,12 @@ package Coursera;
     Explanation
     (1, 4) -> (5, 4) -> (5, 9) .
 */
+package Visa;
 
-public class CanReach {
+public class JenBotCanReach {
 
     public static void main(String[] args) {
-        CanReach isItPossible = new CanReach();
+        JenBotCanReach isItPossible = new JenBotCanReach();
         System.out.println(isItPossible.canReach(1, 4, 5, 9));
     }
 

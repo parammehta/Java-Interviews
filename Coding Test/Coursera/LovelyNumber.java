@@ -1,3 +1,5 @@
+package Coursera;
+
 public class LovelyNumber {
     // Method to print unique digit numbers
     // in range from l to r.

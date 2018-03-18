@@ -1,3 +1,5 @@
+package Twitter;
+
 import java.util.*;
 
 public class TimeSeriesAggregation {

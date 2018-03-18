@@ -1,3 +1,5 @@
+package Google;
+
 import java.util.TreeSet;
 
 public class KEmptySlots {

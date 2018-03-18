@@ -1,3 +1,5 @@
+package Zappos;
+
 import java.util.HashMap;
 
 public class AllYourBase {
